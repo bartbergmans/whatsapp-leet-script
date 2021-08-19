@@ -14,8 +14,6 @@ while(!feof($handle)) {
             $name = explode(':', $name);
             $name = $name[0];
 
-            $name = str_replace("“Ongeloofelijke Lul” ", "", $name);
-
             $date = substr($line, 0, 10);
             if(!isset($leet[$name])) {
                 $leet[$name] = [];
